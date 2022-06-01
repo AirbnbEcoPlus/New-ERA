@@ -7,7 +7,7 @@ if __name__ == "__main__":
     databaseConnector.database_connect()
     #Lance le bot discord
     if databaseConnector.get_option("setup") == "true":
-        bot.run()
+        bot.reload_client()
 
 
 

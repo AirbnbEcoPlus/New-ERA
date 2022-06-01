@@ -3,26 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Setup</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </head>
-<body>
 <body id="body">
+<h3>{{ utc_dt }}</h3>
 <h1 id="title" class="text">Setup du bot</h1>
 <form id="form">
     <p id="tokenText" class="text">Token:</p> <input id="tokenField" type="text" >
     <br>
     <p id="nameText" class="text">Nom:</p> <input id="nameField" type="text" >
     <br>
-    <p id="descText" class="text">Description:</p> <input id="descField" type="text" >
+    <p id="serverKeyText" class="text">serverKey:</p> <input id="serverKeyField" type="text" >
     <br>
-
-
 </form>
 <br>
 <div class="container">
     <button id="submitButton" class="submit-button" >C'est Fini</button>
 </div>
-
-
-
 </body>
+<script type=text/javascript src="{{url_for('static', filename='script/setup.js') }}"></script>
 </html>
