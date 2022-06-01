@@ -78,3 +78,10 @@ def get_event(id):
     cur = con.cursor()
     cur.execute("SELECT value FROM events WHERE id=?", (id,))
     return cur.fetchone()[0]
+
+def get_all_events():
+    con = sqlite3.connect('database/database.sqlite')
+    cur = con.cursor()
+    cur.execute("SELECT * FROM events")
+    return cur.fetchall()
+
