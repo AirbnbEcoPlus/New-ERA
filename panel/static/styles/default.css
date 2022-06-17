@@ -1,0 +1,71 @@
+.Ajouté a Discord {
+    position: relative;
+    padding: 10px;
+    width: 200px;
+    heigh: 60px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    background-color: lightslategray;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+.Ajouté a discord {
+    position: absolute;
+    z-index: 3;
+    left:50%;
+    top:50%;
+    transform: translate(-50% ,-50%);
+    font-size: 1.2em;
+    color : #fff;
+}
+
+.Ajouté a Discord span.ajouté-a-discord  {
+    opacity: 1;
+}
+
+Ajouté a Discord span.discord-icon  {
+    position: absolute;
+    z-index : 2;
+    top: 50% ;
+    left: -10%;
+    transform: translate(-50% , -50%);
+    font-size: 2em
+}
+
+.Ajouté a Discord.clicked .discord-icon {
+    animation: discord 1.5s ease-in-out forwards;
+}
+
+.Ajouté a Discord.clicked span.Ajouté-a-discord {
+    animation: add 1.5s ease-in-out forwards;
+}
+
+.Ajouté a Discord.cliked span.Ajouté {
+    animation: added 1.5s ease-in-out forwards;
+}
+
+@keyframes Ajouté-a-Discord  {
+    0%
+{
+    left: -10%;
+}
+    40%,60%{
+        left:50%;
+            }
+        100% {
+            left:110%;
+                }
+
+                            }
+
+@keyframes Ajouté-a-discord  {
+    0% {
+        opacity: 1;
+    }
+    2O%,100% {
+opacity:0;
+}
+}
